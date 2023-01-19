@@ -8,6 +8,6 @@ import jakarta.ws.rs.core.Response;
 public class PingPongResource {
     @POST
     public Response pong() {
-        throw new RuntimeException("NOP");
+        return Response.status(200).entity("ok").build();
     }
 }
